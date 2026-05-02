@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #20b2a6;
+  --color-secondary: #9400D3;
+  --color-tertiary: #fff;
+  /* #6F00FF */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+  background: rgb(0, 0, 0);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background-image: url("../public/hero-bg-black.jpg");
+  background-position: center;
+  background-size: cover;
+  inset: 0;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: -1;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+@layer components {
+  .glow-text {
+    text-shadow: 0 0 50px color-mix(in srgb, var(--color-secondary) 80%, transparent);
+  }
+  .glass {
+    background-color: color-mix(in srgb, var(--color-secondary) 50%, transparent);
+    backdrop-filter: blur(16px);
+  }
+}
+
+@layer utilities {
+  @keyframes fade-X {
+    from {
+      opacity: 0;
+      transform: translateX(-10);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+  @keyframes fade-Y {
+    from {
+      opacity: 0;
+      transform: translateY(20);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  @keyframes slow-drift {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -30px);
+    }
+    50% {
+      transform: translate(-15px, -20px);
+    }
+    75% {
+      transform: translate(30px, 10px);
+    }
+  }
+  .animate-fade-X {
+    animation: fade-X 0.5s ease-out both;
+  }
+  .animate-fade-Y {
+    animation: fade-Y 1s ease-out both;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+  .timeline-glow {
+    box-shadow:
+      0 0 40px color-mix(in srgb, var(--color-primary) 35%, transparent),
+      0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+  .button-glow {
+    box-shadow:
+      0 0 40px color-mix(in srgb, var(--color-secondary) 35%, transparent),
+      0 0 80px color-mix(in srgb, var(--color-secondary) 25%, transparent);
+  }
+  .line-glow {
+    box-shadow:
+      0 0 40px color-mix(in srgb, var(--color-tertiary) 35%, transparent),
+      0 0 80px color-mix(in srgb, var(--color-tertiary) 25%, transparent);
+  }
+}
