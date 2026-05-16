@@ -111,7 +111,7 @@ const Hero = () => {
                   </a>
                 </button>
                 <button className="inline-flex gap-2 h-10 border-gray-500/40 border font-semibold px-6 hover:text-white/80 cursor-pointer py-2 rounded-3xl">
-                  <a href="https://drive.google.com/file/d/13PLZ1rbjS_Wui5igL2kRMktNl393MB_C/view?usp=sharing" target="_blank" className="inline-flex gap-2">
+                  <a href="https://drive.google.com/file/d/1sn6i1xSUNBwc5VaUmK6eDHNGaZAE8ibB/view?usp=sharing" target="_blank" className="inline-flex gap-2">
                     <Download className="w-3 h-3 mt-1" /> Download CV
                   </a>
                 </button>
