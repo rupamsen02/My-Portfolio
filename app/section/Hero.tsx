@@ -21,6 +21,8 @@ const Hero = () => {
     "Typescript",
     "Node.js",
     "Express.js",
+    "Postman",
+    "Thunder Client",
     "MongoDB",
     "PostgreSQL",
     "Firebase",
@@ -145,7 +147,7 @@ const Hero = () => {
         <div className="relative overflow-hidden mt-2">
           <div className="mt-4 flex text-gray-400 text-base whitespace-nowrap animate-slide w-full">
             {[...skills, ...skills].map((item, index) => (
-              <div key={index} className="px-4 sm:px-6 py-4 ">
+              <div key={index} className="px-4 sm:px-4.5 py-4 ">
                 <span className="cursor-pointer hover:text-gray-300/90 transition-colors">
                   {item}
                 </span>
