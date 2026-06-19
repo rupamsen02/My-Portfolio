@@ -30,13 +30,6 @@ const Projects = () => {
       skills: ["HTML", "CSS", "Next.js", "Javascript", "Node.js", "Express.js", "Mongoose", "MongoDB"],
       link: "https://freelance-platform-frontend.vercel.app/"
     },
-    {
-      name: "Uber-drive clone",
-      description: "It's a fullstack website with HTML, CSS, React, Javascript, Node.js, Express.js and PostgreSQL(Supabase).",
-      image: "./uberdriveclone.png",
-      skills: ["HTML", "CSS", "Next.js", "Javascript", "Node.js", "Express.js", "PostgreSQL(Supabase)"],
-      link: "https://uberclone-drive-frontend.vercel.app/"
-    }
   ];
   return (
     <div
