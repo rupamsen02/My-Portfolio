@@ -28,7 +28,7 @@ const Projects = () => {
       description: "I build a fullstack website with HTML, CSS, Next.js, Javascript, Node.js, Express.js, Mongoose and MongoDB.",
       image: "./freelancer.png",
       skills: ["HTML", "CSS", "Next.js", "Javascript", "Node.js", "Express.js", "Mongoose", "MongoDB"],
-      link: "https://freelance-platform-frontend-enbt.vercel.app/"
+      link: "https://freelance-platform-frontend.vercel.app/"
     },
     {
       name: "Uber-drive clone",
