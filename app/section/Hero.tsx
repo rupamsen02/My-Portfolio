@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="relative animate-fade-Y">
               <div className=" flex items-center mx-auto justify-center relative mt-6 my-10 z-1">
                 <img
-                  src="./me1.png"
+                  src="./rupam.jpeg"
                   alt=""
                   className="h-50 w-50 object-cover rounded-full border-3 border-secondary/90 bg-[#010B13] z-50 button-glow"
                 />
